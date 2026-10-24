@@ -1,15 +1,13 @@
 name: First Workflow
-on: 
-    push:
-    workflow_dispatch:
+on: workflow_dispatch
 jobs: 
-    first-job:
-        runs-on: windows-2022
-        steps:
-        - name: Hello Github Action
-          run: echo "Hello This is First workflow in github action"
-        - name: Bye Github Action
-          run: echo "Bye github action"
+  first-job:
+    runs-on: windows-2022
+    steps:
+      - name: Hello Github Action
+        run: echo "Hello This is First workflow in github action"
+      - name: Bye Github Action
+        run: echo "Bye github action"
         
       
     
